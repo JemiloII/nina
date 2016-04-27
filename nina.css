@@ -1,0 +1,21 @@
+.bookmark {
+    display: block;
+    height: 600px;
+    position: relative;
+    width: 200px;
+    overflow: hidden;
+    background-position: center;
+    margin: 10px;
+}
+
+.download-instructions {
+    padding: 15% 25%;
+}
+
+.addButtonMargin {
+    margin-bottom: 20px;
+}
+
+.center-image {
+    padding: 5% 25%;
+}

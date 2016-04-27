@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nina</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.3/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.3/angular-route.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-toastr/1.7.0/angular-toastr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-toastr/1.7.0/angular-toastr.tpls.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.0.20/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-toastr/1.7.0/angular-toastr.min.css">
+    <link rel="stylesheet" href="nina.css">
+</head>
+<body ng-app="nina" class="layout-default page-elements">
+    <section class="hero is-info is-large" ng-include="'app/partials/header.html'"></section>
+    <ng-view></ng-view>
+    <footer class="footer" ng-include="'app/partials/footer.html'"></footer>
+    <script src="app/nina.js"></script>
+    <script src="app/routes.js"></script>
+    <script src="app/components/bookmark/bookmark.directive.js"></script>
+    <script src="app/components/download/download.service.js"></script>
+    <script src="app/components/download/download.controller.js"></script>
+    <script src="app/components/prints/prints.service.js"></script>
+    <script src="app/components/prints/prints.controller.js"></script>
+    <script src="app/components/upload/upload.service.js"></script>
+    <script src="app/components/upload/upload.controller.js"></script>
+    <script src="app/components/upload/upload.directive.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<section class="section" ng-controller="printsController">
+    <div class="container">
+        <div class="heading">
+            <div class="columns">
+                <div class="column is-12">
+                    <h1 class="title is-1">Prints</h1>
+                    <h3 class="subtitle is-3 is-right">for Nerds</h3>
+                    <div class="container">
+                        <a href="#/upload">
+                            <button class="button is-primary addButtonMargin">Upload Your Own Like A Booknerd!</button>
+                        </a>
+                        <div class="columns">
+                            <div class="column is-3 notification is-info"
+                                 ng-repeat="bookmark in bookmarks">
+                                <a href="#/download" ng-click="setBookmarkUrl(bookmark)">
+                                    <bookmark ng-src="{{bookmark}}"></bookmark>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
